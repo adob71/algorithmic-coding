@@ -1,0 +1,14 @@
+Check for balanced parentheses in Python
+
+Difficulty Level : Easy
+Last Updated : 31 Dec, 2020
+Given an expression string, write a python program to find whether a given string has balanced parentheses or not.
+
+Examples:
+
+Input : {[]{()}}
+Output : Balanced
+
+Input : [{}{}(]
+Output : Unbalanced
+

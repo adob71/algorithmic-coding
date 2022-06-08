@@ -1,0 +1,11 @@
+* The purpose of the script is to return all prime numbers up to a given number
+* On repeat runs, the script should indicate whether a number has been seen before
+
+Example expected output when first run up to 10, and then called a second time up to 20
+
+-----------------------
+# call script up to 10
+2 3 5 7
+# call script up to 20
+2* 3* 5* 7* 11 13 17 19
+------------------------

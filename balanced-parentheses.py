@@ -1,6 +1,15 @@
-# Python3 code to Check for balanced parentheses in an expression
+#usage
+#python3 balanced-parentheses.py
+#output
+#{[]{()}}
+#Balanced
+#[{}{})(]
+#Unbalanced
+#((()
+#Unbalanced
 
-# Function to check parentheses
+#functions
+
 def check(myStr):
     open_list = ["[","{","("]
     close_list = ["]","}",")"]
@@ -21,7 +30,8 @@ def check(myStr):
     else:
         return "Unbalanced"
 
-# Driver code
+#driver code
+
 string = "{[]{()}}"
 print(string)
 print(check(string))

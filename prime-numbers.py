@@ -50,6 +50,7 @@ for i in range(1,n+1):
     if(i<=m):
       print("*",end="")
     print(end=" ")
+print()
 
 if (n>m):
   writeMax(n)

@@ -1,0 +1,21 @@
+2Fibonacci-like SequenceScore: 80/100
+Test Cases Solved: 8/10
+Test Cases
+Sample	10/10	0.02 secs
+1st element (min test)	0/10	0.02 secs
+Traceback (most recent call last):
+  File "/temp/file.py", line 18, in <module>
+    print(e3)
+NameError: name 'e3' is not defined
+2nd element	0/10	0.01 secs
+Traceback (most recent call last):
+  File "/temp/file.py", line 18, in <module>
+    print(e3)
+NameError: name 'e3' is not defined
+Max test	10/10	0.02 secs
+Test Case 5	10/10	0.02 secs
+Test Case 6	10/10	0.08 secs
+Test Case 7	10/10	0.02 secs
+Test Case 8	10/10	0.02 secs
+Test Case 9	10/10	0.01 secs
+Test Case 10	10/10	0.02 secs

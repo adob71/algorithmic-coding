@@ -1,0 +1,13 @@
+1Reverse SentencesScore: 100/100
+Test Cases Solved: 10/10
+Test Cases
+Example	10/10	0.01 secs
+Small random	10/10	0.02 secs
+Small random	10/10	0.01 secs
+100 lines x 1 word	10/10	0.09 secs
+50 lines x 2 words	10/10	0.07 secs
+25 lines x 4 words	10/10	0.01 secs
+10 lines x 4 words	10/10	0.01 secs
+15 lines x 4 words	10/10	0.02 secs
+1 line x 100 words	10/10	0.02 secs
+Symmetrical sentences	10/10	0.01 secs

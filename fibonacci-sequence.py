@@ -1,4 +1,3 @@
-# This is Python 2
 import sys
 
 line = sys.stdin.readline()

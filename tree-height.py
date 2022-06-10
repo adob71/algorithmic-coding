@@ -1,3 +1,13 @@
+#usage
+#python3 tree-height.py
+#output
+#(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))
+#2
+#(5, (3, (20, None, None), (21, None, None)), (10, (1, (71, (77, (17, None, None), None), None), None), None))
+#5
+
+#functions
+
 class Tree:
 
     def __init__(self, x, l, r):

@@ -23,13 +23,17 @@ class Tree:
     self.r = r
 
 def TreeHeight(t):
-    lh=0
-    if (t.l!=None):
-      lh=1+TreeHeight(t.l)
-    rh=0
-    if (t.r!=None):
-      rh=1+TreeHeight(t.r)
-    return max(lh,rh)
+  lh=0
+  if (t.l!=None):
+    lh=1+TreeHeight(t.l)
+  rh=0
+  if (t.r!=None):
+    rh=1+TreeHeight(t.r)
+  return max(lh,rh)
+
+def CreateTree(s):
+  t=Tree(0,None,None)
+  return t
 
 t1=Tree(0,None,None)
 print(t1)
@@ -46,3 +50,8 @@ print(TreeHeight(t3))
 t4=Tree(0,None,t3)
 print(t4)
 print(TreeHeight(t4))
+
+s="(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))"
+t=CreateTree(s)
+print(t)
+print(TreeHeight(t))

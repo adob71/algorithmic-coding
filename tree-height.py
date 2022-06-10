@@ -6,34 +6,59 @@
 #|| || ||
 #
 #(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))
-#
-#class TreeExample(object):
-#  x = 0
-#  l = None
-#  r = None
-#
-#driver code
-#t=TreeExample()
-#print(t.x,t.l,t.r)
+
+#functions
 
 class Tree:
-  def __init__(self, x, l, r):
-    self.x = x
-    self.l = l
-    self.r = r
+
+    def __init__(self, x, l, r):
+
+        self.x = x
+        self.l = l
+        self.r = r
 
 def TreeHeight(t):
-  lh=0
-  if (t.l!=None):
-    lh=1+TreeHeight(t.l)
-  rh=0
-  if (t.r!=None):
-    rh=1+TreeHeight(t.r)
-  return max(lh,rh)
+
+    lh=0
+    if (t.l!=None):
+        lh=1+TreeHeight(t.l)
+
+    rh=0
+    if (t.r!=None):
+        rh=1+TreeHeight(t.r)
+
+    return max(lh,rh)
 
 def CreateTree(s):
-  t=Tree(0,None,None)
-  return t
+#(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))
+
+    x=extractString(s,1)
+
+    l=extractString(s,2)
+    if (l!=None):
+        l=CreateTree(l)
+
+    r=extractString(s,3)
+    if (r!=None):
+        r=CreateTree(r)
+
+    t=Tree(x,l,r)
+
+    return t
+
+def extractString(s,i):
+#(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))
+
+    if (i==1):
+        return 0
+
+    if (i==2):
+        return None
+
+    if (i==3):
+        return None
+
+#drive code
 
 t1=Tree(0,None,None)
 print(t1)

@@ -1,57 +1,59 @@
-#  __5__
-#  |   |
-#  3   10
-# | |  ||
-#20 21 1
-#|| || ||
-#
-#(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))
-#
-#class TreeExample(object):
-#  x = 0
-#  l = None
-#  r = None
-#
-#driver code
-#t=TreeExample()
-#print(t.x,t.l,t.r)
-
 class Tree:
-  def __init__(self, x, l, r):
-    self.x = x
-    self.l = l
-    self.r = r
 
-def TreeHeight(t):
-  lh=0
-  if (t.l!=None):
-    lh=1+TreeHeight(t.l)
-  rh=0
-  if (t.r!=None):
-    rh=1+TreeHeight(t.r)
-  return max(lh,rh)
+    def __init__(self, x, l, r):
 
-def CreateTree(s):
-  t=Tree(0,None,None)
-  return t
+        self.x = x
+        self.l = l
+        self.r = r
 
-t1=Tree(0,None,None)
-print(t1)
-print(TreeHeight(t1))
+def treeHeight(t):
 
-t2=Tree(0,t1,None)
-print(t2)
-print(TreeHeight(t2))
+    lh=0
+    if (t.l!=None):
+        lh=1+treeHeight(t.l)
 
-t3=Tree(0,t2,None)
-print(t3)
-print(TreeHeight(t3))
+    rh=0
+    if (t.r!=None):
+        rh=1+treeHeight(t.r)
 
-t4=Tree(0,None,t3)
-print(t4)
-print(TreeHeight(t4))
+    return max(lh,rh)
 
-s="(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))"
-t=CreateTree(s)
-print(t)
-print(TreeHeight(t))
+def createTree(s):
+
+    tup=tuple(s)
+
+    x=tup[0]
+
+    l=tup[1]
+    if (l!=None):
+        l=createTree(l)
+
+    r=tup[2]
+    if (r!=None):
+        r=createTree(r)
+
+    t=Tree(x,l,r)
+
+    return t
+
+#drive code
+
+s=(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))
+tup=tuple(s)
+print(tup)
+#print(tup[0])
+#print(tup[1])
+#print(tup[2])
+t=createTree(s)
+#print(t)
+print(treeHeight(t))
+
+s=(5, (3, (20, None, None), (21, None, None)), (10, (1, (71, (77, (17, None, None), None), None), None), None))
+tup=tuple(s)
+print(tup)
+#print(tup[0])
+#print(tup[1])
+#print(tup[2])
+t=createTree(s)
+#print(t)
+print(treeHeight(t))

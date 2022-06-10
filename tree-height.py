@@ -32,13 +32,13 @@ def TreeHeight(t):
 def CreateTree(s):
 #(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))
 
-    x=extractString(s,1)
+    x=extractString(s,"x")
 
-    l=extractString(s,2)
+    l=extractString(s,"l")
     if (l!=None):
         l=CreateTree(l)
 
-    r=extractString(s,3)
+    r=extractString(s,"r")
     if (r!=None):
         r=CreateTree(r)
 
@@ -46,16 +46,16 @@ def CreateTree(s):
 
     return t
 
-def extractString(s,i):
+def extractString(s,a):
 #(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))
 
-    if (i==1):
+    if (a=="x"):
         return 0
 
-    if (i==2):
+    if (a=="l"):
         return None
 
-    if (i==3):
+    if (a=="r"):
         return None
 
 #drive code

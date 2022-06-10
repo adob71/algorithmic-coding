@@ -60,21 +60,21 @@ def extractString(s,a):
 
 #drive code
 
-t1=Tree(0,None,None)
-print(t1)
-print(TreeHeight(t1))
-
-t2=Tree(0,t1,None)
-print(t2)
-print(TreeHeight(t2))
-
-t3=Tree(0,t2,None)
-print(t3)
-print(TreeHeight(t3))
-
-t4=Tree(0,None,t3)
-print(t4)
-print(TreeHeight(t4))
+#t1=Tree(0,None,None)
+#print(t1)
+#print(TreeHeight(t1))
+#
+#t2=Tree(0,t1,None)
+#print(t2)
+#print(TreeHeight(t2))
+#
+#t3=Tree(0,t2,None)
+#print(t3)
+#print(TreeHeight(t3))
+#
+#t4=Tree(0,None,t3)
+#print(t4)
+#print(TreeHeight(t4))
 
 s="(5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))"
 t=CreateTree(s)

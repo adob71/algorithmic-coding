@@ -43,4 +43,3 @@ print(check(string))
 string = "((()"
 print(string)
 print(check(string))
-

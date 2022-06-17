@@ -51,7 +51,7 @@ def createBinaryTree(s):
 
     return t
 
-#drive code
+#driver code
 
 s=(1, None, None)
 tup=tuple(s)

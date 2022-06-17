@@ -18,7 +18,7 @@ def solution(A):
             return i
         i = i + 1
 
-#driver code 
+#driver code
 
 A = [1, 3, 6, 4, 1, 2]
 print (A)

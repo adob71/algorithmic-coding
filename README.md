@@ -1,6 +1,7 @@
 ### algorithmic-coding
 
 ### Project Structure
+```
 .
 ├── balanced-parentheses
 ├── binary-tree-height
@@ -10,3 +11,4 @@
 ├── reverse-sentences
 ├── simple-blockchain
 └── smallest-missing-integer
+```
